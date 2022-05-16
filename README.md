@@ -12,5 +12,5 @@ Adam Lorek
 2. npm i 
 3. npm start
 4. Logowanie na stronie za pomocą konta admininistratora
-Login: admin
-Hasło: admin
+  Login: admin
+  Hasło: admin
