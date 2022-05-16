@@ -1,0 +1,62 @@
+import { render } from '@testing-library/react';
+import React, {Component} from 'react';
+import axios from 'axios';
+
+
+    export default class Login extends Component{
+            
+        handleSubmit = e =>{
+            e.preventDefault();
+            console.log("works!");
+            const data={
+                username: this.username,
+                numberBankAcc: this.numberBankAcc,
+                password: this.password
+
+            };
+            console.log(data)
+    
+            axios.post('https://lorekdev.pl/polls/api/createacc/', data)
+            .then(res =>{
+                console.log(res)
+            })
+            .catch(err=>{
+                console.log(err)
+            })
+    
+        };
+
+ 
+  
+    render(){
+        return(
+            <form onSubmit={this.handleSubmit}>
+                <h3>Rejestracja</h3>
+                <div className="form-group">
+
+                    <label>username</label>
+                    <input type="username" className="form-control" placeholder="username"
+                        onChange={e=> this.username =e.target.value}/>
+                    
+                </div>
+                
+                <div className="form-group">
+
+                    <label>numberBankAcc</label>
+                    <input type="number" className="form-control" placeholder="numberBankAcc"
+                        onChange={e=> this.numberBankAcc =e.target.value}/>
+                    
+                </div>
+                <div className='form-group'>
+                    <label>Password</label>
+                    <input type="password" className="form-control" placeholder="password"
+                        onChange={e=>this.password = e.target.value}/>
+
+
+                </div>
+                
+                <button className="btn btn-primary btn-block">Zarejestuj się</button>
+            </form>
+        )
+    }
+    }
