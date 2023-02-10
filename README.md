@@ -1,9 +1,9 @@
 # Projekt Frontendu banku w React
 
 # Wykonanie :
-Nikodem Luto
-Filip Mielnik
-Adam Lorek
+Nikodem Luto - Angular
+Filip Mielnik- React
+Adam Lorek - Django
 
 ## Rozszerzona wersja dokumentacji wkrótce będzie dostępna
 
