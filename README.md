@@ -2,7 +2,7 @@
 
 # Wykonanie :
 Nikodem Luto - Angular
-Filip Mielnik- React
+Filip Mielnik- React.js
 Adam Lorek - Django
 
 ## Rozszerzona wersja dokumentacji wkrótce będzie dostępna
